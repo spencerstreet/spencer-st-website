@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Spencer Street</title>
+<meta name="description" content="Spencer Street Limited makes Catchup, the app for getting friends together in real life." />
+<link rel="canonical" href="https://spencer.st/" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<meta property="og:title" content="Spencer Street" />
+<meta property="og:description" content="We make Catchup, the app for getting friends together in real life." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" />
+<style>
+  :root {
+    --paper: #FAF9F5;
+    --ink: #1C1C1C;
+    --ink-2: rgba(28,28,28,0.68);
+    --ink-3: rgba(28,28,28,0.5);
+    --line: rgba(28,28,28,0.12);
+    --card: #FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #121212;
+      --ink: #F2F1EC;
+      --ink-2: rgba(242,241,236,0.7);
+      --ink-3: rgba(242,241,236,0.5);
+      --line: rgba(242,241,236,0.14);
+      --card: #1C1C1C;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Inter Tight", -apple-system, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .wrap { width: 100%; max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 28px 0; }
+  .mark { font-weight: 600; font-size: 17px; letter-spacing: -0.01em; text-decoration: none; }
+  main { flex: 1; display: flex; align-items: center; padding: 32px 0 64px; }
+  h1 {
+    margin: 0 0 20px;
+    font-size: clamp(36px, 7vw, 60px);
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    max-width: 14ch;
+  }
+  .lede { margin: 0 0 40px; font-size: 18px; line-height: 1.5; color: var(--ink-2); max-width: 38ch; }
+  .product {
+    display: flex; align-items: center; gap: 16px;
+    padding: 16px 18px; border: 1px solid var(--line); border-radius: 18px;
+    background: var(--card); text-decoration: none; max-width: 460px;
+    transition: transform 160ms ease;
+  }
+  .product:hover { transform: translateY(-1px); }
+  .product img { width: 56px; height: 56px; border-radius: 13px; flex: none; }
+  .product strong { display: block; font-weight: 600; font-size: 17px; }
+  .product span { display: block; margin-top: 2px; font-size: 15px; line-height: 1.4; color: var(--ink-2); }
+  .product .arrow { margin-left: auto; font-size: 20px; color: var(--ink-3); }
+  footer { border-top: 1px solid var(--line); }
+  .foot { padding: 20px 20px 32px; font-size: 13px; line-height: 1.6; color: var(--ink-3); }
+  .foot p { margin: 0; }
+  .foot a { text-decoration: none; border-bottom: 1px solid var(--line); }
+  .foot a:hover { color: var(--ink); }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap"><a class="mark" href="/">Spencer Street</a></div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>Software for getting together.</h1>
+      <p class="lede">
+        Spencer Street is a small independent company. We make Catchup — float an idea in
+        seconds, see who’s in, and get your friends together in real life.
+      </p>
+      <a class="product" href="https://keentocatchup.com">
+        <img src="assets/catchup-icon.png" alt="" />
+        <div>
+          <strong>Catchup</strong>
+          <span>Get friends together in real life. On iPhone and Android.</span>
+        </div>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <p>Spencer Street Limited · Registered in New Zealand · Company number 9330369 · NZBN 9429052719738</p>
+      <p><a href="mailto:hello@spencer.st">hello@spencer.st</a> · Catchup support: <a href="mailto:support@keentocatchup.com">support@keentocatchup.com</a></p>
+      <p>EU and UK GDPR representative: <a href="https://gdpr.euverify.com/verify/8ff46a2f-9273-49e6-9b40-fed2ca89c5e6" target="_blank" rel="noopener">Euverify</a> · <a href="https://keentocatchup.com/privacy/">Privacy</a></p>
+    </div>
+  </footer>
+</body>
+</html>
